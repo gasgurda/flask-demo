@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: notejam
-        image: gasgurda/notejam
+        image: gasgurda/flask-demo
         ports:
         - containerPort: 5000
