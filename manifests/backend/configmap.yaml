@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: notejam-configmap
+data:
+  ENVIRONMENT: "production"
+  SQLALCHEMY_DATABASE_URI: "postgresql://user:password@postgresql-service/testdb"

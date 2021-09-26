@@ -19,3 +19,14 @@ spec:
         image: gasgurda/flask-demo
         ports:
         - containerPort: 5000
+        env:
+        - name: ENVIRONMENT
+          valueFrom:
+            configMapKeyRef:
+              name: notejam-configmap
+              key: ENVIRONMENT
+        - name: SQLALCHEMY_DATABASE_URI
+          valueFrom:
+            configMapKeyRef:
+              name: postgresql-configmap
+              key: SQLALCHEMY_DATABASE_URI
