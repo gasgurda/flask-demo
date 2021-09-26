@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: postgresql
+  name: postgresql
+  namespace: default
+spec:
+  containers:
+  - image: postgresql
+    name: postgresql
+    ports:
+    - containerPort: 5432
+      protocol: TCP
