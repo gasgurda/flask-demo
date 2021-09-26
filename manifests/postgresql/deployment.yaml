@@ -1,13 +1,13 @@
 kind: Deployment
 metadata:
-  name: notejam-deployment
+  name: postgresql-deployment
   labels:
-    app: notejam
+    run: postgresql
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
-      app: notejam
+      app: postgresql
   template:
     metadata:
       labels:
