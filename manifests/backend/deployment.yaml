@@ -28,5 +28,5 @@ spec:
         - name: SQLALCHEMY_DATABASE_URI
           valueFrom:
             configMapKeyRef:
-              name: postgresql-configmap
+              name: notejam-configmap
               key: SQLALCHEMY_DATABASE_URI
